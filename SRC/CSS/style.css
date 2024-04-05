@@ -1,22 +1,24 @@
 html {
     color: #fff;
+    scroll-behavior: smooth;
 }
 
-body{
-    background-color: #282828;
+body {
+    background: linear-gradient(150deg, #000000, #9e00ff);
+    background-size: 120% 120%;
     font-family: "Poppins", sans-serif;
     margin: 0 auto;
     max-width: 1120px;
 }
 
-header.cabecalho{
+header.cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 15px;
 }
 
-header.cabecalho .logo{
+header.cabecalho .logo {
     width: 65px;
     height: 65px;
     border: 2px solid #fff;
@@ -28,39 +30,36 @@ header.cabecalho .logo{
     transition: 0.2s;
 }
 
-header.cabecalho a:hover .logo{
+header.cabecalho a:hover .logo {
     color: #9443d8;
     border: 2px solid #9443d8;
 }
 
 
-header.cabecalho nav.menu li a{
+header.cabecalho nav.menu li a {
     font-size: 20px;
-    text-transform: capitalize; /* USADO PARA DEIXAR AS PRIMEIRAS LETRAS DE CADA PALAVRA EM MAIUSACULO */
+    text-transform: capitalize;
+    /* USADO PARA DEIXAR AS PRIMEIRAS LETRAS DE CADA PALAVRA EM MAIUSACULO */
     padding: 10px 20px;
     border-radius: 50px;
     transition: .2s;
 }
 
-header.cabecalho nav.menu li a:hover{
+header.cabecalho nav.menu li a:hover {
     background-color: #9443d8;
     color: #fff;
 }
 
-section.home{
-    background-color: #9443d8;
+section.home {
     display: flex;
-    min-height: calc(100vh - 125px); /* Função calc() CSS permite você executar cálculos quando especificar os valores de propriedades no CSS. */
+    min-height: calc(100vh - 125px);
+    /* Função calc() CSS permite você executar cálculos quando especificar os valores de propriedades no CSS. */
     align-items: center;
     gap: 50px;
     justify-content: space-between;
 }
 
-section.home .informacoes ul{
-    
-}
-
-section.home .informacoes{
+section.home .informacoes {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -69,24 +68,24 @@ section.home .informacoes{
     max-width: 50%;
 }
 
-section.home .informacoes h1{
+section.home .informacoes h1 {
     font-family: "Raleway", sans-serif;
     font-size: 45px;
     margin-bottom: 20px;
 }
 
-section.home .informacoes p{
+section.home .informacoes p {
     font-family: "Raleway", sans-serif;
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-section.home .informacoes .redes-sociais{
+section.home .informacoes .redes-sociais {
     display: flex;
     gap: 20px;
 }
 
-section.home .informacoes .redes-sociais a i{
+section.home .informacoes .redes-sociais a i {
     border: 2px solid #fff;
     border-radius: 50%;
     width: 50px;
@@ -98,7 +97,7 @@ section.home .informacoes .redes-sociais a i{
     transition: 0.3s;
 }
 
-section.home .informacoes .redes-sociais a i:hover{
+section.home .informacoes .redes-sociais a i:hover {
     background-color: #9443d8;
     color: #fff;
     border: 1px solid #9443d8;
@@ -106,59 +105,61 @@ section.home .informacoes .redes-sociais a i:hover{
     transform: scale(1.1);
 }
 
-section.home .container-foto  .foto{
+section.home .container-foto .foto {
     max-width: 450px;
     border-radius: 50%;
 }
 
-section.home .container-foto .foto.sombra-interna{
+section.home .container-foto .foto.sombra-interna {
     background: linear-gradient(#8a35c8, #18c063, #00eea2);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;;
 }
 
-section.home .container-foto img{
+section.home .container-foto img {
     width: 100%;
     border-radius: 50%;
 }
 
 /* SECTION PROJETIOS */
 
-section.projetos{
-    background-color: purple;
+section.projetos {
     padding: 70px 0;
 }
 
-section.projetos .titulos{
+section.projetos .titulos {
     text-align: center;
     padding: 60px 0;
     font-size: 45px;
     font-weight: 500;
     text-transform: uppercase;
 }
-section.projetos .container-projetos{
+
+section.projetos .container-projetos {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* Os itens flexíveis são quebrados em multiplas linhas. */
+    flex-wrap: wrap;
+    /* Os itens flexíveis são quebrados em multiplas linhas. */
     margin-bottom: 20px;
     justify-content: center;
 }
 
-section.projetos .container-projetos .projeto{
+section.projetos .container-projetos .projeto {
     max-height: 500;
     max-width: 260;
     position: relative;
     display: none;
 }
 
-section.projetos .container-projetos .projeto.ativo{
+section.projetos .container-projetos .projeto.ativo {
     display: block;
 }
 
-section.projetos .container-projetos .projeto img{
+section.projetos .container-projetos .projeto img {
     height: 100%;
 }
 
-section.projetos .container-projetos .projeto h3{
-    background-color: #282828;
+section.projetos .container-projetos .projeto h3 {
     width: 100%;
     padding-left: 20px;
     padding-bottom: 10px;
@@ -167,7 +168,7 @@ section.projetos .container-projetos .projeto h3{
     bottom: 0;
 }
 
-section.projetos .container-projetos .projeto .informacoes-projeto{
+section.projetos .container-projetos .projeto .informacoes-projeto {
     background-color: #000000c2;
     padding: 40px 20px;
     position: absolute;
@@ -181,13 +182,15 @@ section.projetos .container-projetos .projeto .informacoes-projeto{
     transition: 0.3s
 }
 
-section.projetos .container-projetos .projeto .informacoes-projeto:hover{
+section.projetos .container-projetos .projeto .informacoes-projeto:hover {
     opacity: 0.8;
     background-color: #000;
 }
 
-section.projetos .container-projetos .btn-projetos{
-    background-color: none;
+/* BOTÃO PARA MOSTRAR MAIS PROJETOS */
+
+section.projetos .btn-mostrar-projetos {
+    background: none;
     color: #fff;
 
     border: 2px solid #fff;
@@ -206,10 +209,26 @@ section.projetos .container-projetos .btn-projetos{
     cursor: pointer;
 }
 
-section.projetos .container-projetos .btn-projetos:hover{
+section.projetos .btn-mostrar-projetos:hover {
     background-color: #9443d8;
     transition: 0.3s;
 }
 
+section.projetos .btn-mostrar-projetos.remover {
+    display: none;
+}
 
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
