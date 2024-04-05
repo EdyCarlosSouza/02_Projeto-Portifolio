@@ -73,6 +73,9 @@ section.home .informacoes h1 {
     font-size: 45px;
     margin-bottom: 20px;
 }
+section.home .informacoes h1 span{
+    color: #9443d8;
+}
 
 section.home .informacoes p {
     font-family: "Raleway", sans-serif;
