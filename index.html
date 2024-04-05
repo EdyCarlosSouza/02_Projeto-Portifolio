@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- LINK DE ESTILIZAÇÃO EM CSS -->
+    <link rel="stylesheet" href="./SRC/CSS/reset.css">
+    <link rel="stylesheet" href="./SRC/CSS/style.css">
+
     <title>Carlos Santana - Portifolio</title>
 
-    <!-- Link para importar os Icones-->
+    <!-- LINK PARA IMPORTAÇÃO DOS ICONES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
     
-    <!-- Icone para importar as fontes-->
+    <!-- LINK PARA A IMPORTAÇÃO DAS FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -39,9 +42,9 @@
             <p>um desenvolvedor de frontend em formação que busca se aprimorar constantemnete.</p>
             <p>Esse é um projeto de portifolio pessoal, criado com objetivo de compatilhar outros projetos que fiz. </p>
 
-            <ul>
-                <li>
-                    <a href="#" title="Abrir LinkedIn" target="_blank">
+            <ul class="redes-sociais">
+                <li >
+                    <a href="#" title="Abrir Li  nkedIn" target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <!-- Atributo (target="_blank") usado para abrir o link em uma aba nova-->
@@ -71,7 +74,7 @@
     </section> <!-- final home-->
 
     <section class="projetos" id="projetos">
-        <h2>Meus Projetos</h2>
+        <h2 class="titulos">Meus Projetos</h2>
         <div class="container-projetos">
             <div class="projeto ativo">
                 <a href="#" target="_blank">
@@ -117,7 +120,7 @@
                 </a>
             </div>
 
-            <div class="projeto ativo">
+            <div class="projeto">
                 <a href="#" target="_blank">
                     <img src="./src/imgs/projeto-gta.png" alt="...">
                     <h3>Projeto 5</h3>
@@ -128,7 +131,7 @@
                 </a>
             </div>
 
-            <div class="projeto ativo">
+            <div class="projeto">
                 <a href="#" target="_blank">
                     <img src="./src/imgs/projeto-gta.png" alt="...">
                     <h3>Projeto 6</h3>
@@ -139,7 +142,7 @@
                 </a>
             </div>
 
-            <div class="projeto ativo">
+            <div class="projeto">
                 <a href="#" target="_blank">
                     <img src="./src/imgs/projeto-gta.png" alt="...">
                     <h3>Projeto 7</h3>
@@ -150,7 +153,7 @@
                 </a>
             </div>
 
-            <div class="projeto ativo">
+            <div class="projeto">
                 <a href="#" target="_blank">
                     <img src="./src/imgs/projeto-gta.png" alt="...">
                     <h3>Projeto 8</h3>
@@ -159,9 +162,10 @@
                         <p>Ver no GitHub Pagesb </p>
                     </div>
                 </a>
-            </div>
-        </div> <!-- Final da div Container-projeto-->
-        <button class="btn-mostrar-mais">Mostrar Mais</button>
+            </div><!-- Final projetos -->
+        </div> <!-- Final da Container-projeto-->
+        
+        <button class="btn-projetos">Mostrar Mais</button>
     </section> <!--Final projetos-->
 
 </body>
