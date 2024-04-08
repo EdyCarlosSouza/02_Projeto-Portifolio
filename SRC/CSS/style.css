@@ -160,6 +160,7 @@ section.projetos .container-projetos .projeto.ativo {
 
 section.projetos .container-projetos .projeto img {
     height: 100%;
+    border-radius: 30px;
 }
 
 section.projetos .container-projetos .projeto h3 {
@@ -187,6 +188,7 @@ section.projetos .container-projetos .projeto .informacoes-projeto {
 
 section.projetos .container-projetos .projeto .informacoes-projeto:hover {
     opacity: 0.8;
+    border-radius: 30px;
     background-color: #000;
 }
 
@@ -234,4 +236,5 @@ section.projetos .btn-mostrar-projetos.remover {
         background-position: 0% 50%;
     }
 }
+
 
